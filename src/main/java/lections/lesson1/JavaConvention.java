@@ -46,6 +46,7 @@ public class JavaConvention {
     // Ctrl + Alt + L - автоматический формат кода
     // Shift + F6 - реформат/переименование
     // Ctrl + D - копирование строки
+    // Alt + F8 - evaluate-режим
 
     // GIT:
     // 1.   VCS -> Enable Version Control Integration
@@ -67,8 +68,6 @@ public class JavaConvention {
         application.print(e);
         application.print(f);
         application.print(g);
-
-
         System.out.println();
         application.printNumberIfGreaterThan5(3);
         application.printNumberIfGreaterThan5(5);
