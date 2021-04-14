@@ -1,0 +1,161 @@
+{
+  "id": 3163,
+  "edocRefId": 2663,
+  "globalId": "0000000441|00000000000000003163",
+  "typeId": 188,
+  "channel": "WEB",
+  "documentNumber": "15",
+  "documentDate": "2020-09-25",
+  "version": 4,
+  "read": null,
+  "client": {
+    "id": 657376,
+    "version": 9479,
+    "inn": "6449042973",
+    "shortName": "ООО \"Рога и копыта\"",
+    "ogrn": "1026401974972"
+  },
+  "status": {
+    "base": "SIGNED",
+    "name": "Подписан",
+    "extended": null,
+    "extendedName": null,
+    "comment": null
+  },
+  "checkResults": [],
+  "sellingPoint": null,
+  "identityDocument": {
+    "identityDocType": {
+      "id": 13,
+      "version": 0,
+      "code": 21,
+      "name": {
+        "ru_RU": "Паспорт гражданина РФ"
+      },
+      "seriesPresence": "MANDATORY",
+      "issueSubdivisionPresence": "MANDATORY"
+    },
+    "series": "7009",
+    "number": "894549",
+    "issueDate": "2016-09-29",
+    "issuer": "mZeJHLTRlb",
+    "issuerSubdivision": "885236",
+    "lastName": "WiImcktJhx",
+    "firstName": "ndsFuaNGCB",
+    "middleName": "HBKdCEImRV"
+  },
+  "clientExternalIds": null,
+  "bankAccount": {
+    "account": {
+      "id": 76827485,
+      "version": 332,
+      "accountNumber": "40701810683938574392",
+      "bic": "042201234",
+      "branch": {
+        "id": 97,
+        "version": 19,
+        "headBranch": null,
+        "bic": null,
+        "shortName": "ОФИС В Г.НОРИЛЬСКЕ",
+        "timeZone": "Europe/Moscow",
+        "branchAddresses": null,
+        "currencyTrifle": true,
+        "code_TFU": "1234"
+      }
+    },
+    "bank": {
+      "id": 1234,
+      "version": 0,
+      "bic": "042201234",
+      "place": null,
+      "name": null,
+      "placeType": null
+    }
+  },
+  "operBranch": {
+    "branch": {
+      "id": 97,
+      "version": 19,
+      "headBranch": null,
+      "bic": null,
+      "shortName": "ОФИС В Г.НОРИЛЬСКЕ",
+      "timeZone": "Europe/Moscow",
+      "branchAddresses": null,
+      "currencyTrifle": true,
+      "code_TFU": "1234"
+    },
+    "bank": {
+      "id": 1234,
+      "version": 0,
+      "bic": "042201234",
+      "place": null,
+      "name": null,
+      "placeType": null
+    }
+  },
+  "operationDate": "2020-10-02",
+  "description": "OabGcWdoxv",
+  "currency": {
+    "id": 156,
+    "version": 0,
+    "alphabeticCode": "RUR",
+    "numericCode": "810",
+    "okvName": "российский рубль"
+  },
+  "amount": "43000.00",
+  "symbolAmounts": [
+    {
+      "amount": "43000.00",
+      "cashSymbol": {
+        "id": 40,
+        "version": null,
+        "code": "80",
+        "name": "Поступления наличных денег через банкоматы кредитных организаций",
+        "isExpense": null,
+        "weight": null
+      }
+    }
+  ],
+  "cashQuantities": [
+    {
+      "quantity": 8,
+      "cash": {
+        "id": null,
+        "version": null,
+        "currencyNumericCodeIso": null,
+        "nominal": 5000.0,
+        "description": "5000,00 руб.",
+        "isCoin": false
+      }
+    },
+    {
+      "quantity": 1,
+      "cash": {
+        "id": null,
+        "version": null,
+        "currencyNumericCodeIso": null,
+        "nominal": 2000.0,
+        "description": "2000,00 руб.",
+        "isCoin": false
+      }
+    },
+    {
+      "quantity": 1,
+      "cash": {
+        "id": null,
+        "version": null,
+        "currencyNumericCodeIso": null,
+        "nominal": 1000.0,
+        "description": "1000,00 руб.",
+        "isCoin": false
+      }
+    }
+  ],
+  "commissionAccount": null,
+  "budget": null,
+  "budgetAmounts": [],
+  "classifier": null,
+  "noteFromBank": null,
+  "cancelRequest": null,
+  "cancelReqInProgress": false
+}
