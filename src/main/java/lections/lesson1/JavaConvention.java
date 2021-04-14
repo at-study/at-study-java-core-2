@@ -47,6 +47,11 @@ public class JavaConvention {
     // Shift + F6 - реформат/переименование
     // Ctrl + D - копирование строки
 
+    // GIT:
+    // 1.   VCS -> Enable Version Control Integration
+    // 2.   Ctrl + K - Commit
+    // 3.   Ctrl + Shift + K - Push (Указать remote - свой репозиторий на github)
+
     public static void main(String[] args) {
         JavaConvention application = new JavaConvention();
         final int a = 7;
