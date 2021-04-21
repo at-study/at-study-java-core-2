@@ -2,11 +2,11 @@ package lections.lesson1;
 
 public class Human {
 
-    String lastName;
-    String firstName;
-    String patronymic;
-    int age;
-    double weight;
+    public String lastName;
+    public String firstName;
+    public String patronymic;
+    public int age;
+    public double weight;
 
     void sayMyName() {
         System.out.println(firstName);
