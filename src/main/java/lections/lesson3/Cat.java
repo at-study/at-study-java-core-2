@@ -6,8 +6,9 @@ public class Cat {
     int age;
     int weight;
     final String name;
+    int ordinal;
 
-    final static String description = "Кот";
+    final static String DESCRIPTION = "Кот";
     static int count = 0;
     final static int FINAL_COUNT;
 
@@ -21,6 +22,7 @@ public class Cat {
         this.age = age;
         this.weight = weight;
         count++;
+        ordinal = count;
     }
 
     void voice() {
