@@ -20,7 +20,7 @@ public class Transposition2 {
      * @param n
      * @return
      */
-    static int[][] createArray(int m, int n) {
+    private static int[][] createArray(int m, int n) {
         int[][] result = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -36,7 +36,7 @@ public class Transposition2 {
      * @param sourceMatrix - исходная матрица
      * @return транспонированная матрица
      */
-    static int[][] transpose(int[][] sourceMatrix) {
+    private static int[][] transpose(int[][] sourceMatrix) {
         int m = sourceMatrix.length;
         int n = sourceMatrix[0].length;
         int[][] result = new int[n][m];
@@ -53,7 +53,7 @@ public class Transposition2 {
      *
      * @param matrix
      */
-    static void printArray(int[][] matrix) {
+    private static void printArray(int[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;
         for (int i = 0; i < m; i++) {

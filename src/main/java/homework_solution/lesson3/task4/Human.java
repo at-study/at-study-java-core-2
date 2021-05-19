@@ -11,6 +11,11 @@ public class Human {
         this.name = name;
     }
 
+    public static void main(String[] args) {
+        Human ivan = new Human("Иван");
+        Human sergey = new Human("Сергей");
+        ivan.addFriend(sergey);
+    }
     /**
      * Добавляет друга человеку. Вызывает аналогичный метод добавления себя у добавленного друга
      *
