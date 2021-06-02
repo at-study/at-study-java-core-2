@@ -3,6 +3,7 @@ package homework_solution.lesson1.task6;
 public class Scheme {
 
     public static void main(String[] args) {
+
         Scheme scheme = new Scheme();
         System.out.println(scheme.getSchemeResult(false, false, false, false));
         System.out.println(scheme.getSchemeResult(true, true, true, true));
