@@ -1,0 +1,1 @@
+<Cat><Name>Мурзик</Name><Age>12</Age></Cat>

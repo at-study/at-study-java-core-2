@@ -2,10 +2,12 @@ package lections.lesson8.ui.browsers;
 
 import java.util.Objects;
 
+import lections.lesson10.properties.Property;
+
 public class BrowserFactory {
 
     public static Browser getBrowser() {
-        String browserName = System.getProperty("browser");
+        String browserName = Property.getStringProperty("browser");
         Objects.requireNonNull(browserName, "Need to set browser into system variable");
         switch (browserName) {
             case "chrome":
