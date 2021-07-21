@@ -1,0 +1,13 @@
+{
+  "firstName": "value1",
+  "passport": {
+    "seria": "5400",
+    "number": "123000"
+  },
+  "address": {
+    "street": "ул.Мясницкая",
+    "houseNumber": 15,
+    "flatNumber": 268
+  },
+  "registration": null
+}
