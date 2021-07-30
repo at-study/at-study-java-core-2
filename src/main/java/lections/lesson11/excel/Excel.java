@@ -17,11 +17,24 @@ import lections.lesson11.Person;
 
 public class Excel {
 
+    /**
+     * Read three persons and returns them as list
+     *
+     * @param path to file
+     * @return list of persons from file
+     */
     public static List<Person> getThreeFirstPersons(String path) {
         Workbook excelFile = openExcelFile(path);
         Sheet sheet = excelFile.getSheet("Persons1");
         List<Row> threeRows = getThreeRowsFromSheet(sheet);
         return convertRowsToPersons(threeRows);
+    }
+
+    public static List<Person> getAllPersons(String path) {
+        Workbook excelFile = openExcelFile(path);
+        Sheet sheet = excelFile.getSheet("Persons1");
+        List<Row> allRows = getAllRowsFromSheet(sheet);
+        return convertRowsToPersons(allRows);
     }
 
     private static Workbook openExcelFile(String path) {
@@ -36,6 +49,14 @@ public class Excel {
         List<Row> rows = new ArrayList<>();
         for (int i = 0; i <= 2; i++) {
             Row row = sheet.getRow(i);
+            rows.add(row);
+        }
+        return rows;
+    }
+
+    private static List<Row> getAllRowsFromSheet(Sheet sheet) {
+        List<Row> rows = new ArrayList<>();
+        for (Row row : sheet) {
             rows.add(row);
         }
         return rows;

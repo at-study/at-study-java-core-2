@@ -22,7 +22,7 @@ public class JsonTests {
     public void serializationTest() {
         Passport passport = new Passport("1234", "567890");
         Human human = new Human("Иванов", "Владимир", "Петрович", passport);
-        String json = JsonUtils.toJson(human);
+        String json = JsonUtils.serialize(human);
 
         Assertions.assertEquals(
                 "{\"lastName\":\"Иванов\",\"firstName\":\"Владимир\",\"patronymic\":\"Петрович\",\"passport\":{\"series\":\"1234\",\"number\":\"567890\",\"issueDate\":\"21.07.2021\"}}",
@@ -33,7 +33,7 @@ public class JsonTests {
     @Test
     public void deserializationTest() {
         String json = "{\"lastName\":\"Иванов\",\"firstName\":\"Владимир\",\"patronymic\":\"Петрович\",\"passport\":{\"series\":\"1234\",\"number\":\"567890\",\"issueDate\":\"21.07.2021\"}}";
-        Human human = JsonUtils.fromJson(json, Human.class);
+        Human human = JsonUtils.deserialize(json, Human.class);
 
         Assertions.assertNotNull(human);
         Assertions.assertEquals("Иванов", human.getLastName());
@@ -47,7 +47,7 @@ public class JsonTests {
     @Test
     public void personSerializationTest() {
         Person person = Excel.getThreeFirstPersons("src/main/java/homework_task/lesson11/persons.xlsx").get(0);
-        String json = JsonUtils.toJson(person);
+        String json = JsonUtils.serialize(person);
     }
 
     @Test
@@ -60,7 +60,7 @@ public class JsonTests {
                 "\t\"series\": \"4510\",\n" +
                 "\t\"number\": \"155442\"\n" +
                 "}";
-        Person person = JsonUtils.fromJson(json, Person.class);
+        Person person = JsonUtils.deserialize(json, Person.class);
 
         Assertions.assertEquals("Иванов", person.getLastName());
         Assertions.assertEquals("Владимир", person.getFirstName());
@@ -78,7 +78,7 @@ public class JsonTests {
         final String PATH = "src/main/java/lections/lesson11/json/id/id.json";
         String content = String.join("", Files.readAllLines(Paths.get(PATH)));
 
-        Id id = JsonUtils.fromJson(content, Id.class);
+        Id id = JsonUtils.deserialize(content, Id.class);
 
         Assertions.assertNotNull(id);
         Assertions.assertNotNull(id.getAddress());
